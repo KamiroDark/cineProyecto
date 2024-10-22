@@ -7,9 +7,9 @@ public class Funcion extends Cine {
 
 	private int sala;
 	private LocalTime horario;
-	private ArrayList<String> pelicula;
+	private ArrayList<Pelicula> pelicula;
 
-	public Funcion(String teatro, String estado, int sala, LocalTime horario, ArrayList<String> pelicula) {
+	public Funcion(String teatro, String estado, int sala, LocalTime horario, ArrayList<Pelicula> pelicula) {
 		super(teatro, estado);
 		this.sala = sala;
 		this.horario = horario;
@@ -39,11 +39,11 @@ public class Funcion extends Cine {
 		this.horario = horario;
 	}
 
-	public ArrayList<String> getPelicula() {
+	public ArrayList<Pelicula> getPelicula() {
 		return pelicula;
 	}
 
-	public void setPelicula(ArrayList<String> pelicula) {
+	public void setPelicula(ArrayList<Pelicula> pelicula) {
 		this.pelicula = pelicula;
 	}
 

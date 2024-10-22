@@ -38,7 +38,7 @@ public abstract class Asiento {
 		this.reservado = reservado;
 	}
 	
-	
+	//Precio de cada silla
 	public abstract double precio();
 	
 	
