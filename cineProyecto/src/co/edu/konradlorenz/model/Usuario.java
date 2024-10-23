@@ -1,6 +1,6 @@
 package co.edu.konradlorenz.model;
 
-public class Usuario implements ClienteVip{
+public class Usuario implements ClienteGold, ClientePro{
 
 	private String nombreUsuario;
 	private String correoElectronico;

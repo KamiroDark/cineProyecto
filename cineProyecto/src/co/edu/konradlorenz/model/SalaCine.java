@@ -59,15 +59,15 @@ public class SalaCine {
 	}
 
 	private void inicializarAsientosPremier() {
-		for(int i = 0; i<fila;i++) {
-			for(int j = 0; j<columna; j++) {
-				if (i >= fila - 2) {
-	                sala[i][j] = new sillaPremier(i, j, false);
-	            } else {
-	                sala[i][j] = new sillaGeneral(i, j, false);
+		 for (int i = 0; i < sala.length; i++) {
+	            for (int j = 0; j < sala[i].length; j++) {
+	                if (i < sala.length / 2) {
+	                    sala[i][j] = new sillaGeneral("G" + (i + 1) + (j + 1));
+	                } else {
+	                    sala[i][j] = new sillaPremier("P" + (i + 1) + (j + 1), "Reclinable y bebidas gratis");
+	                }
 	            }
-			}
-		}
+	        }
 	}
 	
 	public int asientosDisponibles() {
