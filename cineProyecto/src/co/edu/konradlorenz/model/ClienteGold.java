@@ -1,6 +1,6 @@
 package co.edu.konradlorenz.model;
 
-public interface ClienteVip {
+public interface ClienteGold {
 	
 	public static final double DESCUENTO = 0.3;
 	
