@@ -9,15 +9,24 @@ public class Ventana {
 	public String pedirString(String mensaje) {
 		System.out.println(mensaje);
 		String op = leer.nextLine();
+		leer.nextLine();
 		return op;
 	}
 
 	public int pedirInt(String mensaje) {
 		System.out.println(mensaje);
 		int op = leer.nextInt();
+		leer.nextLine();
 		return op;
 	}
-
+	
+	public long pedirLong(String mensaje) {
+		System.out.println(mensaje);
+		long op = leer.nextLong();
+		leer.nextLine();
+		return op;
+	}
+	
 	public void mostrarMenu() {
 		System.out.println("-----------------------------------");
 		System.out.println("-------BIENVENID@ A DARKAZO--------");
@@ -43,7 +52,7 @@ public class Ventana {
 	}
 
 	public void mostrarVenta() {
-
+		
 	}
 
 	public void mostrarFactura() {

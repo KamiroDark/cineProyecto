@@ -60,4 +60,16 @@ public class Usuario implements ClienteGold, ClientePro{
 		return false;
 	}
 
+	@Override
+	public String miembroGold(String MENMBRESIA) {
+		
+		return MENMBRESIA;
+	}
+
+	@Override
+	public String miembroPro(String MENMBRESIA) {
+		
+		return MENMBRESIA;
+	}
+
 }
