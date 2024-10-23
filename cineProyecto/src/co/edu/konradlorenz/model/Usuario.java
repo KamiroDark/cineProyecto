@@ -51,8 +51,7 @@ public class Usuario implements ClienteGold, ClientePro{
 
 	@Override
 	public String toString() {
-		return "Usuario [nombreUsuario=" + nombreUsuario + ", correoElectronico=" + correoElectronico + ", contraseña="
-				+ contraseña + ", celular=" + celular + "]";
+		return "Usuario [nombreUsuario=" + nombreUsuario + ", correoElectronico=" + correoElectronico + ", celular=" + celular + "]";
 	}
 
 	@Override

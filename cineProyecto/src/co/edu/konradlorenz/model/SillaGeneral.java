@@ -1,21 +1,21 @@
 package co.edu.konradlorenz.model;
 
-public class sillaGeneral extends Asiento {
+public class SillaGeneral extends Asiento {
 
 	private String identificador;
 	
 	
 
-	public sillaGeneral(int numero, int fila, boolean reservado, String identificador) {
+	public SillaGeneral(int numero, int fila, boolean reservado, String identificador) {
 		super(numero, fila, reservado);
 		this.identificador = identificador;
 	}
 
-	public sillaGeneral(String identificador) {
+	public SillaGeneral(String identificador) {
 		
 		this.identificador = identificador;
 	}
-	public sillaGeneral() {
+	public SillaGeneral() {
 	}
 
 	@Override

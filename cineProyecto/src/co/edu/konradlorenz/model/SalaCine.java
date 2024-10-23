@@ -62,9 +62,9 @@ public class SalaCine {
 		 for (int i = 0; i < sala.length; i++) {
 	            for (int j = 0; j < sala[i].length; j++) {
 	                if (i < sala.length / 2) {
-	                    sala[i][j] = new sillaGeneral("G" + (i + 1) + (j + 1));
+	                    sala[i][j] = new SillaGeneral("G" + (i + 1) + (j + 1));
 	                } else {
-	                    sala[i][j] = new sillaPremier("P" + (i + 1) + (j + 1), "Reclinable y bebidas gratis");
+	                    sala[i][j] = new SillaPremier("P" + (i + 1) + (j + 1), "Reclinable y bebidas gratis");
 	                }
 	            }
 	        }
