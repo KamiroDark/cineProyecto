@@ -14,6 +14,17 @@ public class Control {
 	protected Ventana objVenatana = new Ventana();
 	
 	public void run() {
-		
+		do {
+			objVenatana.mostrarMenu();
+			int opcion = objVenatana.pedirInt("Por favor ingrese una opcion vista en el menu de manera numerica");
+			
+			switch (opcion) {
+			case 1: {
+				objVenatana
+			}
+			default:
+				throw new IllegalArgumentException("Unexpected value: " + opcion);
+			}
+		} while ();
 	}
 }
