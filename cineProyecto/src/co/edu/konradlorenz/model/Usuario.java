@@ -1,17 +1,21 @@
 package co.edu.konradlorenz.model;
 
-public class Usuario implements ClienteGold, ClientePro{
+public abstract class Usuario {
 
-	private String nombreUsuario;
-	private String correoElectronico;
-	private String contraseña;
-	private long celular;
+	protected String nombreUsuario;
+	protected String correoElectronico;
+	protected String contraseña;
+	protected long celular;
+	protected TipoMembresia membresia;
 
-	public Usuario(String nombreUsuario, String correoElectronico, String contraseña, long celular) {
+	public Usuario(String nombreUsuario, String correoElectronico, String contraseña, long celular,
+			TipoMembresia membresia) {
+		super();
 		this.nombreUsuario = nombreUsuario;
 		this.correoElectronico = correoElectronico;
 		this.contraseña = contraseña;
 		this.celular = celular;
+		this.membresia = membresia;
 	}
 
 	public Usuario() {
@@ -49,26 +53,20 @@ public class Usuario implements ClienteGold, ClientePro{
 		this.celular = celular;
 	}
 
+	public TipoMembresia getMembresia() {
+		return membresia;
+	}
+
+	public void setMembresia(TipoMembresia membresia) {
+		this.membresia = membresia;
+	}
+
 	@Override
 	public String toString() {
-		return "Usuario [nombreUsuario=" + nombreUsuario + ", correoElectronico=" + correoElectronico + ", celular=" + celular + "]";
+		return "Usuario [nombreUsuario=" + nombreUsuario + ", correoElectronico=" + correoElectronico + ", celular="
+				+ celular + "]";
 	}
-
-	@Override
-	public boolean calcularDescuento(double precio) {
-		return false;
-	}
-
-	@Override
-	public String miembroGold(String MENMBRESIA) {
-		
-		return MENMBRESIA;
-	}
-
-	@Override
-	public String miembroPro(String MENMBRESIA) {
-		
-		return MENMBRESIA;
-	}
+	
+	public abstract double calcularDescuento(double totalCompra);
 
 }

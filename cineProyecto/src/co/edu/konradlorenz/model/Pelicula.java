@@ -3,11 +3,14 @@ package co.edu.konradlorenz.model;
 public class Pelicula {
 
 	private String titulo;
+	private String clasificacion;
 	private String genero;
-	private int duracion;
+	private int duracion; // en minutos
 
-	public Pelicula(String titulo, String genero, int duracion) {
+	public Pelicula(String titulo, String clasificacion, String genero, int duracion) {
+		super();
 		this.titulo = titulo;
+		this.clasificacion = clasificacion;
 		this.genero = genero;
 		this.duracion = duracion;
 	}
@@ -39,10 +42,17 @@ public class Pelicula {
 		this.duracion = duracion;
 	}
 
+	public String getClasificacion() {
+		return clasificacion;
+	}
+
+	public void setClasificacion(String clasificacion) {
+		this.clasificacion = clasificacion;
+	}
+
 	@Override
 	public String toString() {
 		return "Pelicula [titulo=" + titulo + ", genero=" + genero + ", duracion=" + duracion + "]";
 	}
-	
-	
+
 }

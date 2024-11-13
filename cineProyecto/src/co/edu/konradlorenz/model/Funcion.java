@@ -1,16 +1,12 @@
 package co.edu.konradlorenz.model;
 
-import java.time.LocalTime;
-import java.util.ArrayList;
+public class Funcion {
 
-public class Funcion extends Cine {
+	private SalaCine sala;
+	private String horario;
+	private Pelicula pelicula;
 
-	private int sala;
-	private LocalTime horario;
-	private ArrayList<Pelicula> pelicula;
-
-	public Funcion(String teatro, String estado, int sala, LocalTime horario, ArrayList<Pelicula> pelicula) {
-		super(teatro, estado);
+	public Funcion(SalaCine sala, String horario, Pelicula pelicula) {
 		this.sala = sala;
 		this.horario = horario;
 		this.pelicula = pelicula;
@@ -19,31 +15,27 @@ public class Funcion extends Cine {
 	public Funcion() {
 	}
 
-	public Funcion(String teatro, String estado) {
-		super(teatro, estado);
-	}
-
-	public int getSala() {
+	public SalaCine getSala() {
 		return sala;
 	}
 
-	public void setSala(int sala) {
+	public void setSala(SalaCine sala) {
 		this.sala = sala;
 	}
 
-	public LocalTime getHorario() {
+	public String getHorario() {
 		return horario;
 	}
 
-	public void setHorario(LocalTime horario) {
+	public void setHorario(String horario) {
 		this.horario = horario;
 	}
 
-	public ArrayList<Pelicula> getPelicula() {
+	public Pelicula getPelicula() {
 		return pelicula;
 	}
 
-	public void setPelicula(ArrayList<Pelicula> pelicula) {
+	public void setPelicula(Pelicula pelicula) {
 		this.pelicula = pelicula;
 	}
 
@@ -51,6 +43,5 @@ public class Funcion extends Cine {
 	public String toString() {
 		return "Funcion [sala=" + sala + ", horario=" + horario + ", pelicula=" + pelicula + "]";
 	}
-	
-	
+
 }

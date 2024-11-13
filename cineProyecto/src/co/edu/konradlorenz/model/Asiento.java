@@ -1,9 +1,10 @@
 package co.edu.konradlorenz.model;
 
-public abstract class Asiento {
+public class Asiento implements SillaPremier, SillaGeneral{
+
 	private int numero;
 	private int fila;
-	private boolean reservado;
+	private boolean reservado = false;
 
 	public Asiento(int numero, int fila, boolean reservado) {
 		this.numero = numero;
@@ -37,14 +38,22 @@ public abstract class Asiento {
 	public void setReservado(boolean reservado) {
 		this.reservado = reservado;
 	}
-	
-	//Precio de cada silla
-	public abstract double precio();
-	
-	
+
 	@Override
 	public String toString() {
 		return "Asiento [numero=" + numero + ", fila=" + fila + ", reservado=" + reservado + "]";
+	}
+
+	@Override
+	public double calcularPrecioPremier() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double calcularPrecioGeneral() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

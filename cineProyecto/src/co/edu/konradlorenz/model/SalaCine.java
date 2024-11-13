@@ -4,15 +4,18 @@ import java.util.Arrays;
 
 public class SalaCine {
 
+	// Atributos
 	private String nombreSala;
 	private int fila;
 	private int columna;
 	private Asiento[][] sala;
 
-	public SalaCine(String nombreSala, int filas, int columnas, Asiento[][] sala) {
+	// Constructores
+	public SalaCine(String nombreSala, int fila, int columna, Asiento[][] sala) {
+		super();
 		this.nombreSala = nombreSala;
-		this.fila = filas;
-		this.columna = columnas;
+		this.fila = fila;
+		this.columna = columna;
 		this.sala = sala;
 	}
 
@@ -20,6 +23,7 @@ public class SalaCine {
 
 	}
 
+	// Carpinteria (Setters, Getters y toString)
 	public String getNombreSala() {
 		return nombreSala;
 	}
@@ -58,29 +62,16 @@ public class SalaCine {
 				+ Arrays.toString(sala) + "]";
 	}
 
-	private void inicializarAsientosPremier() {
-		 for (int i = 0; i < sala.length; i++) {
-	            for (int j = 0; j < sala[i].length; j++) {
-	                if (i < sala.length / 2) {
-	                    sala[i][j] = new SillaGeneral("G" + (i + 1) + (j + 1));
-	                } else {
-	                    sala[i][j] = new SillaPremier("P" + (i + 1) + (j + 1), "Reclinable y bebidas gratis");
-	                }
-	            }
-	        }
-	}
-	
-	public int asientosDisponibles() {
-        int disponibles = 0;
-        for (int i = 0; i < fila; i++) {
-            for (int j = 0; j < columna; j++) {
-                if (!sala[i][j].isReservado()) {
-                    disponibles++;
-                }
-            }
-        }
-        return disponibles;
-    }
-	
-	
+	/*
+	 * / private void inicializarAsientosPremier() { for (int i = 0; i <
+	 * sala.length; i++) { for (int j = 0; j < sala[i].length; j++) { if (i <
+	 * sala.length / 2) { sala[i][j] = new SillaGeneral("G" + (i + 1) + (j + 1)); }
+	 * else { sala[i][j] = new SillaPremier("P" + (i + 1) + (j + 1),
+	 * "Reclinable y bebidas gratis"); } } } }
+	 * 
+	 * public int asientosDisponibles() { int disponibles = 0; for (int i = 0; i <
+	 * fila; i++) { for (int j = 0; j < columna; j++) { if
+	 * (!sala[i][j].isReservado()) { disponibles++; } } } return disponibles; }/
+	 */
+
 }

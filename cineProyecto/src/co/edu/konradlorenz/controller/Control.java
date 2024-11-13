@@ -53,7 +53,7 @@ public class Control {
 				objVentana.mostrarMensaje("2. Adquirir Pro");
 				objVentana.mostrarMensaje("3. No gracias, continuar");
 				int member = objVentana.pedirInt("");
-				if (member == 1) {
+				/*/if (member == 1) {
 					Usuario usuarioActual = new Usuario(nombre, correo, contraseña, celular);
 					objVentana.mostrarMensaje("¡Bienvenido, " + usuarioActual.getNombreUsuario() + "miembro Gold!");
 					clientes.add(usuarioActual);
@@ -65,7 +65,7 @@ public class Control {
 					Usuario usuarioActual = new Usuario(nombre, correo, contraseña, celular);
 					objVentana.mostrarMensaje("¡Bienvenid@ " + usuarioActual.getNombreUsuario());
 					clientes.add(usuarioActual);
-				}
+				}/*/
 				break;
 			}
 			case 2:
