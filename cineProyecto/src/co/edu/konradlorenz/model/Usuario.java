@@ -12,7 +12,6 @@ public abstract class Usuario {
 	// Constructores
 	public Usuario(String nombreUsuario, String correoElectronico, String contraseña, long celular,
 			TipoMembresia membresia) {
-		super();
 		this.nombreUsuario = nombreUsuario;
 		this.correoElectronico = correoElectronico;
 		this.contraseña = contraseña;
