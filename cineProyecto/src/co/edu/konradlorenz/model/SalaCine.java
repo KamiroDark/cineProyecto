@@ -62,16 +62,31 @@ public class SalaCine {
 				+ Arrays.toString(sala) + "]";
 	}
 
-	/*
-	 * / private void inicializarAsientosPremier() { for (int i = 0; i <
-	 * sala.length; i++) { for (int j = 0; j < sala[i].length; j++) { if (i <
-	 * sala.length / 2) { sala[i][j] = new SillaGeneral("G" + (i + 1) + (j + 1)); }
-	 * else { sala[i][j] = new SillaPremier("P" + (i + 1) + (j + 1),
-	 * "Reclinable y bebidas gratis"); } } } }
-	 * 
-	 * public int asientosDisponibles() { int disponibles = 0; for (int i = 0; i <
-	 * fila; i++) { for (int j = 0; j < columna; j++) { if
-	 * (!sala[i][j].isReservado()) { disponibles++; } } } return disponibles; }/
-	 */
-
-}
+	//Metodo para iniciar la sala de cine
+	public void inicializarAsientos() {
+        for (int i = 0; i < sala.length; i++) {
+            for (int j = 0; j < sala[i].length; j++) {
+                // Alternar entre "Premier" y "General"
+                if ((i + j) % 2 == 0) {
+                    sala[i][j] = new Asiento("Premier");
+                } else {
+                    sala[i][j] = new Asiento("General");
+                }
+            }
+        }
+	}//Cierre inicializarAsientos
+	
+	//Metodo para mostrar Asientos
+	public void mostrarAsientos() {
+        System.out.println("Disposición de asientos en " + nombreSala + " (O = ocupado, D = disponible):");
+        for (int i = 0; i < sala.length; i++) {
+            for (int j = 0; j < sala[i].length; j++) {
+                Asiento asiento = sala[i][j];
+                String estado = asiento.isReservado() ? "O" : "D";
+                String tipo = asiento.getTipo().equals("Premier") ? "P" : "G";
+                System.out.print(estado + tipo + " ");
+            }
+            System.out.println();
+        }
+    }//Cierre mostrarAsientos
+}//Cierre SalaCine
