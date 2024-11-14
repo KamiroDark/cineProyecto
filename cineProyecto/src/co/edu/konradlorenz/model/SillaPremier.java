@@ -7,4 +7,4 @@ public interface SillaPremier {
 	
 	//Metodo(s)
 	public double calcularPrecioPremier();
-}
+}//Cierre SillaPremier

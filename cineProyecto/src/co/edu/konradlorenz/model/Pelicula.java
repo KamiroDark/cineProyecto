@@ -1,12 +1,14 @@
 package co.edu.konradlorenz.model;
 
 public class Pelicula {
-
+	
+	//Atributos
 	private String titulo;
 	private String clasificacion;
 	private String genero;
 	private int duracion; // en minutos
-
+	
+	//Constructor
 	public Pelicula(String titulo, String clasificacion, String genero, int duracion) {
 		super();
 		this.titulo = titulo;
@@ -17,7 +19,8 @@ public class Pelicula {
 
 	public Pelicula() {
 	}
-
+	
+	//Carpinteria (Getters, Setters & toString)
 	public String getTitulo() {
 		return titulo;
 	}
@@ -55,4 +58,4 @@ public class Pelicula {
 		return "Pelicula [titulo=" + titulo + ", genero=" + genero + ", duracion=" + duracion + "]";
 	}
 
-}
+}//Cierre Pelicula

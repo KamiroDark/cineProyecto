@@ -16,4 +16,4 @@ public enum TipoMembresia {
     public int getDescuento() {
         return descuento;
     }
-}
+}//Cierre TipoMembresia

@@ -2,12 +2,14 @@ package co.edu.konradlorenz.model;
 
 public abstract class Usuario {
 
+	// Atributos
 	protected String nombreUsuario;
 	protected String correoElectronico;
 	protected String contraseña;
 	protected long celular;
 	protected TipoMembresia membresia;
 
+	// Constructores
 	public Usuario(String nombreUsuario, String correoElectronico, String contraseña, long celular,
 			TipoMembresia membresia) {
 		super();
@@ -21,6 +23,7 @@ public abstract class Usuario {
 	public Usuario() {
 	}
 
+	// Carpinteria (Getters, Setters & toString)
 	public String getNombreUsuario() {
 		return nombreUsuario;
 	}
@@ -66,7 +69,8 @@ public abstract class Usuario {
 		return "Usuario [nombreUsuario=" + nombreUsuario + ", correoElectronico=" + correoElectronico + ", celular="
 				+ celular + "]";
 	}
-	
+
+	// Metodo para calcular el descuento dependiendo de la membresia del usuario
 	public abstract double calcularDescuento(double totalCompra);
 
-}
+}// Cierre Usuario

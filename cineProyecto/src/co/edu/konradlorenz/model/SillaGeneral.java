@@ -7,4 +7,4 @@ public interface SillaGeneral {
 	
 	//Metodo(s)
 	public double calcularPrecioGeneral();
-}
+}//Cierre Silla General
