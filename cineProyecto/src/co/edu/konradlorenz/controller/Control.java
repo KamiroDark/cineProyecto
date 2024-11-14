@@ -26,13 +26,9 @@ public class Control {
 	protected Cine objCine = new Cine();
 
 	protected Ventana objVentana = new Ventana();
-
-	protected ArrayList<Usuario> clientesGold = new ArrayList<>();
-
-	protected ArrayList<Usuario> clientesPro = new ArrayList<>();
-
-	protected ArrayList<Usuario> clientesRegulares = new ArrayList<>();
-
+	
+	protected ArrayList<Usuario> clientes = new ArrayList<>();
+	
 	public Usuario usuarioSeleccionado;
 
 	public void run() {
@@ -105,19 +101,20 @@ public class Control {
 		nuevoCliente(nombreUsuario, correoElectronico, contraseña, celular, tipoMembresia);
 
 	}// Cierre datos Prueba
-
+	
+	//Metodo para crear y agregar usuarios al sistema
 	public void nuevoCliente(String nombreUsuario, String correoElectronico, String contraseña, long celular,
 			TipoMembresia membresia) {
 		if (TipoMembresia.GOLD.equals(membresia)) {
 			Usuario usuarioGold = new ClienteGold(nombreUsuario, correoElectronico, contraseña, celular, membresia);
-			clientesGold.add(usuarioGold);
+			clientes.add(usuarioGold);
 		} else if (TipoMembresia.PRO.equals(membresia)) {
 			Usuario usuarioPro = new ClientePro(nombreUsuario, correoElectronico, contraseña, celular, membresia);
-			clientesPro.add(usuarioPro);
+			clientes.add(usuarioPro);
 		} else if (TipoMembresia.REGULAR.equals(membresia)) {
 			Usuario usuarioRegular = new ClienteRegular(nombreUsuario, correoElectronico, contraseña, celular,
 					membresia);
-			clientesRegulares.add(usuarioRegular);
+			clientes.add(usuarioRegular);
 		}
-	}
-}
+	}//Cierre nuevoCliente
+}//Cierre Control
