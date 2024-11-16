@@ -32,7 +32,11 @@ public class Control {
 	public Usuario usuarioSeleccionado;
 
 	public void run() {
-		// Aqui va el iniciador del conectado al GUI
+		vntMenuPrincipal ventanaPrincipal = new vntMenuPrincipal();
+		
+		ventanaPrincipal.setVisible(true);
+		
+		datosDePrueba();
 	}
 	
 	//Metodo para validar el inicio de sesion

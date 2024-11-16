@@ -14,4 +14,26 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/co/edu/konradlorenz/view/images/elTiempoQueTenemosPoster.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Usuario/Documents/GitTecnicas2/cineProyecto/cineProyecto/src/co/edu/konradlorenz/view/images/elTiempoQueTenemosPoster.jpg</location>
+		</link>
+		<link>
+			<name>src/co/edu/konradlorenz/view/images/posterCodigoTrajeRojo.png</name>
+			<type>1</type>
+			<location>C:/Users/Usuario/Documents/GitTecnicas2/cineProyecto/cineProyecto/src/co/edu/konradlorenz/view/images/posterCodigoTrajeRojo.png</location>
+		</link>
+		<link>
+			<name>src/co/edu/konradlorenz/view/images/posterLaSustancia.png</name>
+			<type>1</type>
+			<location>C:/Users/Usuario/Documents/GitTecnicas2/cineProyecto/cineProyecto/src/co/edu/konradlorenz/view/images/posterLaSustancia.png</location>
+		</link>
+		<link>
+			<name>src/co/edu/konradlorenz/view/images/posterRobotSalvaje.jpg</name>
+			<type>1</type>
+			<location>C:/Users/Usuario/Documents/GitTecnicas2/cineProyecto/cineProyecto/src/co/edu/konradlorenz/view/images/posterRobotSalvaje.jpg</location>
+		</link>
+	</linkedResources>
 </projectDescription>
