@@ -38,25 +38,13 @@ public class Control {
 	//Metodo para validar el inicio de sesion
 	public boolean validarCredenciales(String correo, String contraseña, TipoMembresia membresia) {
 		usuarioSeleccionado = null;
-		if(TipoMembresia.REGULAR.equals(membresia)) {
-			for(Usuario usuario : clientesRegulares) {
+		
+			for(Usuario usuario : clientes) {
 				if(usuario.getCorreoElectronico().equals(correo));
 				usuarioSeleccionado = usuario;
 				break;
 			}
-		}else if(TipoMembresia.GOLD.equals(membresia)) {
-			for(Usuario usuario : clientesRegulares) {
-				if(usuario.getCorreoElectronico().equals(correo));
-				usuarioSeleccionado = usuario;
-				break;
-			}
-		}else if(TipoMembresia.PRO.equals(membresia)) {
-			for(Usuario usuario : clientesRegulares) {
-				if(usuario.getCorreoElectronico().equals(correo));
-				usuarioSeleccionado = usuario;
-				break;
-			}
-		}
+		
 		
 		if (usuarioSeleccionado == null)
 			return false;
@@ -64,7 +52,7 @@ public class Control {
 		boolean verificarContraseña = usuarioSeleccionado.getContraseña().equals(contraseña) ? true : false;
 		
 		return verificarContraseña;
-	}//Cierre validarCredenciales
+	}//*//Cierre validarCredenciales
 	
 	// Metodo para usuarios ya guardados en el programa
 	public void datosDePrueba() {
