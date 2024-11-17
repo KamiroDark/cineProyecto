@@ -64,7 +64,7 @@ public class vntMenuPrincipal extends JFrame {
 			}
 		});
 		btnIniciarSesion.setBackground(new Color(255, 255, 255));
-		btnIniciarSesion.setBounds(931, 25, 123, 32);
+		btnIniciarSesion.setBounds(1106, 25, 123, 32);
 		head.add(btnIniciarSesion);
 		
 		//Boton registrarse
@@ -78,7 +78,7 @@ public class vntMenuPrincipal extends JFrame {
 			}
 		});
 		btnRegistrar.setBackground(new Color(255, 255, 255));
-		btnRegistrar.setBounds(1088, 25, 123, 32);
+		btnRegistrar.setBounds(954, 25, 123, 32);
 		head.add(btnRegistrar);
 		
 		JPanel bodyPeliculas = new JPanel();

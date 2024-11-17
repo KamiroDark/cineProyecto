@@ -15,6 +15,7 @@ import javax.swing.JRadioButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JSeparator;
+import javax.swing.border.LineBorder;
 
 public class vtnRegistrar extends JFrame {
 
@@ -164,5 +165,11 @@ public class vtnRegistrar extends JFrame {
 		lblMembresia.setFont(new Font("Gill Sans MT", Font.BOLD, 22));
 		lblMembresia.setBounds(459, 429, 357, 30);
 		jpnRegistro.add(lblMembresia);
+		
+		JPanel panel = new JPanel();
+		panel.setBorder(new LineBorder(new Color(255, 0, 0), 2));
+		panel.setBackground(new Color(255, 255, 255));
+		panel.setBounds(230, 42, 810, 601);
+		jpnRegistro.add(panel);
 	}
 }

@@ -29,7 +29,7 @@ import javax.swing.JCheckBoxMenuItem;
 import javax.swing.JRadioButtonMenuItem;
 import javax.swing.JMenuBar;
 
-public class HorariosVenom3 extends JPanel {
+public class HorarioCodigoTrajeRojo extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 	private ButtonGroup grupoFunciones = new ButtonGroup();
@@ -39,19 +39,17 @@ public class HorariosVenom3 extends JPanel {
 	/**
 	 * Create the panel.
 	 */
-	public HorariosVenom3() {
-		// Eliminar contentPane, ya que no lo necesitas en este contexto
+	public HorarioCodigoTrajeRojo() {
 		setLayout(null);
-		setBackground(new Color(255, 255, 255)); // Color de fondo para pruebas visuales
-		setPreferredSize(new Dimension(1265, 680)); // Ajusta las dimensiones aquí
+		setBackground(new Color(255, 255, 255));
+		setPreferredSize(new Dimension(1265, 681)); 
 
 		crearCineYFunciones();
 
-		// Crear y agregar el encabezado directamente al panel actual
 		JPanel head = new JPanel();
 		head.setBackground(new Color(255, 0, 0));
 		head.setBounds(0, 0, 1264, 82);
-		add(head); // Se agrega al propio JPanel de HorariosVenom3
+		add(head);
 		head.setLayout(null);
 
 		JLabel lblTitulo = new JLabel("DarKaZo");
@@ -59,23 +57,17 @@ public class HorariosVenom3 extends JPanel {
 		lblTitulo.setBounds(40, 11, 183, 60);
 		head.add(lblTitulo);
 
-		// Botón IniciarSesion
 		JButton btnIniciarSesion = new JButton("Log in");
 		btnIniciarSesion.setFont(new Font("Arial", Font.BOLD, 17));
 		btnIniciarSesion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				// Crear la ventana de inicio de sesión
 				vtnInicioSesion IniciarSesion = new vtnInicioSesion();
-				IniciarSesion.setVisible(true); // Hacer visible la ventana de inicio de sesión
-
-				// Cerrar o esconder la ventana actual (HorariosVenom3)
-				// Si el panel HorariosVenom3 es parte de un JFrame, ocultar este JFrame
-				// Si HorariosVenom3 es el principal, entonces cierra la ventana de la siguiente
-				// manera:
-				Window win = SwingUtilities.windowForComponent(HorariosVenom3.this);
+				IniciarSesion.setVisible(true);
+				
+				Window win = SwingUtilities.windowForComponent(HorarioCodigoTrajeRojo.this);
 				if (win != null) {
-					win.setVisible(false); // Hacer invisible la ventana
-					win.dispose(); // Liberar recursos de la ventana
+					win.setVisible(false);
+					win.dispose(); 
 				}
 			}
 		});
@@ -83,7 +75,7 @@ public class HorariosVenom3 extends JPanel {
 		btnIniciarSesion.setBounds(931, 25, 123, 32);
 		head.add(btnIniciarSesion);
 
-		// Botón Registrarse
+	
 		JButton btnRegistrar = new JButton("Sign up");
 		btnRegistrar.setForeground(new Color(255, 0, 0));
 		btnRegistrar.setFont(new Font("Arial", Font.BOLD, 17));
@@ -92,7 +84,7 @@ public class HorariosVenom3 extends JPanel {
 				vtnRegistrar registrar = new vtnRegistrar();
 				registrar.setVisible(true);
 
-				Window win = SwingUtilities.windowForComponent(HorariosVenom3.this);
+				Window win = SwingUtilities.windowForComponent(HorarioCodigoTrajeRojo.this);
 				if (win != null) {
 					win.setVisible(false);
 					win.dispose();
@@ -103,73 +95,74 @@ public class HorariosVenom3 extends JPanel {
 		btnRegistrar.setBounds(1088, 25, 123, 32);
 		head.add(btnRegistrar);
 
-		// Otros componentes de la clase HorariosVenom3
-		JLabel lblVenomPoster = new JLabel("");
-		lblVenomPoster.setIcon(
-				new ImageIcon(HorariosVenom3.class.getResource("/co/edu/konradlorenz/view/images/posterVenom3.jpg")));
-		lblVenomPoster.setBounds(100, 114, 200, 300);
-		add(lblVenomPoster);
 
-		JLabel lblTextoVenom = new JLabel("Venom 3 El ultimo Baile");
-		lblTextoVenom.setFont(new Font("Impact", Font.PLAIN, 50));
-		lblTextoVenom.setBounds(337, 114, 516, 50);
-		add(lblTextoVenom);
+		JLabel lblTrajeRojoPoster = new JLabel("");
+		lblTrajeRojoPoster.setIcon(
+				new ImageIcon(HorarioRobotSalvaje.class.getResource("/co/edu/konradlorenz/view/images/posterCodigoTrajeRojo.jpg")));
+		lblTrajeRojoPoster.setBounds(100, 114, 200, 300);
+		add(lblTrajeRojoPoster);
+
+		JLabel lblTextoTrajeRojo = new JLabel("Código: Traje Rojo");
+		lblTextoTrajeRojo.setFont(new Font("Impact", Font.PLAIN, 50));
+		lblTextoTrajeRojo.setBounds(337, 114, 516, 50);
+		add(lblTextoTrajeRojo);
 
 		JLabel lblTeatro = new JLabel("Teatro: Niza");
 		lblTeatro.setFont(new Font("Gill Sans MT", Font.BOLD, 17));
 		lblTeatro.setBounds(100, 425, 200, 24);
 		add(lblTeatro);
 
-		JLabel lblGenero = new JLabel("Genero: Acción");
+		JLabel lblGenero = new JLabel("Genero: Comedia, fantástico");
 		lblGenero.setFont(new Font("Gill Sans MT", Font.BOLD, 17));
-		lblGenero.setBounds(100, 448, 200, 24);
+		lblGenero.setBounds(100, 448, 273, 24);
 		add(lblGenero);
 
-		JLabel lblDuracion = new JLabel("Duracion: 110 min\r\n");
+		JLabel lblDuracion = new JLabel("Duracion: 123 min\r\n");
 		lblDuracion.setFont(new Font("Gill Sans MT", Font.BOLD, 17));
 		lblDuracion.setBounds(100, 471, 200, 24);
 		add(lblDuracion);
 
-		JLabel lblClasificacion = new JLabel("Clasificacion: 12-A");
+		JLabel lblClasificacion = new JLabel("Clasificacion: 13-A");
 		lblClasificacion.setFont(new Font("Gill Sans MT", Font.BOLD, 17));
 		lblClasificacion.setBounds(100, 495, 200, 24);
 		add(lblClasificacion);
 
 		JLabel lblDescripcion = new JLabel(
-				"<html>En Venom: El Último Baile, Tom Hardy regresa como Venom, uno de los personajes más grandes y complejos de Marvel, para la última película de la trilogía. Eddie y Venom están huyendo. Perseguidos por sus dos mundos, el dúo se ve obligado a tomar una decisión devastadora que bajará el telón en un último baile entre Venom y Eddie.</html>");
+				"<html>La película sigue al jefe de seguridad del Polo Norte (Dwayne Johnson) mientras forma equipo con un cazarrecompensas (Chris Evans) para rescatar a Papá Noel, secuestrado bajo el nombre clave \"Traje Rojo\". Es una aventura global llena de acción y comedia, con el objetivo de salvar la Navidad​\r\n"
+				+ "​.</html>");
 		lblDescripcion.setFont(new Font("Arial", Font.BOLD, 15));
-		lblDescripcion.setBounds(337, 197, 516, 103);
+		lblDescripcion.setBounds(337, 197, 581, 103);
 		add(lblDescripcion);
 
-		Pelicula peliculaVenom = new Pelicula("Venom 3: El Último Baile", "12-A", "Acción", 110);
+		Pelicula peliculaTrajeRojo = new Pelicula("Código: Traje Rojo", "13-A", "Comedia, fantástico", 110);
 
 		List<Funcion> funciones = new ArrayList<>();
 
-		SalaCine sala1 = new SalaCine("Sala 1", 10, 15); // 10 filas, 15 columnas
-		SalaCine sala2 = new SalaCine("Sala 2", 8, 12); // 8 filas, 12 columnas
+		SalaCine sala1 = new SalaCine("Sala 1", 10, 15); 
+		SalaCine sala2 = new SalaCine("Sala 2", 8, 12); 
 
-		funciones.add(new Funcion(sala1, "12:00 PM", peliculaVenom));
-		funciones.add(new Funcion(sala1, "3:00 PM", peliculaVenom));
-		funciones.add(new Funcion(sala2, "6:00 PM", peliculaVenom));
+		funciones.add(new Funcion(sala1, "12:00 PM", peliculaTrajeRojo));
+		funciones.add(new Funcion(sala1, "3:00 PM", peliculaTrajeRojo));
+		funciones.add(new Funcion(sala2, "6:00 PM", peliculaTrajeRojo));
 
-		int yPosition = 300; // Comenzamos desde una posición vertical
+		int yPosition = 300; 
 		for (Funcion funcion : funciones) {
 			JRadioButton radioButton = new JRadioButton(
 					funcion.getHorario() + " - " + funcion.getSala().getNombreSala());
-			radioButton.setBounds(400, yPosition, 250, 30); // Cambiar la posición vertical
+			radioButton.setBounds(400, yPosition, 250, 30);
 			radioButton.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-					funcionSeleccionada = funcion; // Guardar la función seleccionada
+					funcionSeleccionada = funcion;
 				}
 			});
-			grupoFunciones.add(radioButton); // Agregar al ButtonGroup
+			grupoFunciones.add(radioButton);
 			add(radioButton);
-			yPosition += 40; // Incrementar la posición para los siguientes botones
+			yPosition += 40; 
 		}
-		revalidate(); // Asegurarse de que el panel se redibuje después de agregar los componentes
+		revalidate(); 
 		repaint();
 
-		// Botón Confirmar selección
+	
 		JButton btnConfirmar = new JButton("Confirmar selección");
 		btnConfirmar.setForeground(new Color(255, 255, 255));
 		btnConfirmar.setBackground(new Color(255, 0, 0));
@@ -178,7 +171,7 @@ public class HorariosVenom3 extends JPanel {
 		btnConfirmar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if (funcionSeleccionada != null) {
-					// Aquí se muestra la función seleccionada
+					
 					JOptionPane.showMessageDialog(null,
 							"Has seleccionado la función: " + funcionSeleccionada.getHorario());
 				} else {
@@ -190,33 +183,29 @@ public class HorariosVenom3 extends JPanel {
 		
 		JButton btnAtras = new JButton("Regresar");
 		btnAtras.setForeground(new Color(64, 0, 64));
-		btnAtras.setBackground(new Color(255, 0, 0));
 		btnAtras.setFont(new Font("Arial", Font.BOLD, 17));
-		btnAtras.setBounds(10, 639, 150, 30);
+		btnAtras.setBackground(Color.RED);
+		btnAtras.setBounds(10, 640, 150, 30);
 		add(btnAtras);
 
 	}
 
 	private void crearCineYFunciones() {
-		// Crear la película
-		Pelicula peliculaVenom = new Pelicula("Venom 3: El Último Baile", "12-A", "Acción", 110);
+	
+		Pelicula peliculaTrajeRojo = new Pelicula("Código: Traje Rojo", "13-A", "Comedia, fantástico", 110);
 
-		// Crear las funciones
+	
 		List<Funcion> funciones = new ArrayList<>();
 
-		// Suponiendo que tienes una sala de cine (SalaCine) ya definida
-		SalaCine sala1 = new SalaCine("Sala 1", 10, 15); // 10 filas, 15 columnas
-		SalaCine sala2 = new SalaCine("Sala 2", 8, 12); // 8 filas, 12 columnas
+		SalaCine sala1 = new SalaCine("Sala 1", 10, 15);
+		SalaCine sala2 = new SalaCine("Sala 2", 8, 12); 
 
-		// Crear las funciones
-		funciones.add(new Funcion(sala1, "12:00 PM", peliculaVenom));
-		funciones.add(new Funcion(sala1, "3:00 PM", peliculaVenom));
-		funciones.add(new Funcion(sala2, "6:00 PM", peliculaVenom));
+		funciones.add(new Funcion(sala1, "12:00 PM", peliculaTrajeRojo));
+		funciones.add(new Funcion(sala1, "3:00 PM", peliculaTrajeRojo));
+		funciones.add(new Funcion(sala2, "6:00 PM", peliculaTrajeRojo));
 
-		// Crear el cine con el teatro y las funciones
 		cine = new Cine("Teatro Niza", "Calle Ficticia 123", funciones);
 
-		// Ahora la información de cine está guardada en el objeto cine
-		// Puedes acceder a las funciones, teatro, etc. a través de los métodos de cine
+		
 	}
 }

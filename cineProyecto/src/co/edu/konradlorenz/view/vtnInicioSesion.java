@@ -11,6 +11,7 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
+import javax.swing.border.LineBorder;
 
 public class vtnInicioSesion extends JFrame {
 
@@ -73,40 +74,47 @@ public class vtnInicioSesion extends JFrame {
 		contentPane.add(jpnIniciarSesion);
 		jpnIniciarSesion.setLayout(null);
 		
-		JLabel lblIniciarSesion = new JLabel("Iniciar Sesión");
-		lblIniciarSesion.setFont(new Font("Gill Sans MT", Font.BOLD, 40));
-		lblIniciarSesion.setBounds(530, 149, 249, 71);
-		jpnIniciarSesion.add(lblIniciarSesion);
-		
-		txtCorreoElectrnico = new JTextField();
-		txtCorreoElectrnico.setForeground(new Color(192, 192, 192));
-		txtCorreoElectrnico.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		txtCorreoElectrnico.setBounds(681, 266, 227, 30);
-		jpnIniciarSesion.add(txtCorreoElectrnico);
-		txtCorreoElectrnico.setColumns(10);
-		
-		pswContrasena = new JPasswordField();
-		pswContrasena.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		pswContrasena.setForeground(new Color(192, 192, 192));
-		pswContrasena.setToolTipText("Contraseña");
-		pswContrasena.setBounds(681, 347, 227, 30);
-		jpnIniciarSesion.add(pswContrasena);
+		JPanel panel = new JPanel();
+		panel.setBorder(new LineBorder(new Color(255, 0, 0), 2));
+		panel.setBackground(new Color(255, 255, 255));
+		panel.setBounds(263, 89, 725, 493);
+		jpnIniciarSesion.add(panel);
+		panel.setLayout(null);
 		
 		btnIngresarInicioSesion = new JButton("Ingresar");
+		btnIngresarInicioSesion.setBounds(281, 359, 152, 44);
+		panel.add(btnIngresarInicioSesion);
 		btnIngresarInicioSesion.setForeground(Color.BLACK);
 		btnIngresarInicioSesion.setBackground(Color.RED);
 		btnIngresarInicioSesion.setFont(new Font("Gill Sans MT", Font.BOLD, 22));
-		btnIngresarInicioSesion.setBounds(579, 458, 152, 44);
-		jpnIniciarSesion.add(btnIngresarInicioSesion);
-		
-		JLabel lblCorreoElectronico = new JLabel("Correo electrónico:");
-		lblCorreoElectronico.setFont(new Font("Gill Sans MT", Font.BOLD, 22));
-		lblCorreoElectronico.setBounds(423, 263, 209, 30);
-		jpnIniciarSesion.add(lblCorreoElectronico);
 		
 		JLabel lblContrasena = new JLabel("Contraseña:");
+		lblContrasena.setBounds(207, 245, 127, 30);
+		panel.add(lblContrasena);
 		lblContrasena.setFont(new Font("Gill Sans MT", Font.BOLD, 22));
-		lblContrasena.setBounds(505, 344, 127, 30);
-		jpnIniciarSesion.add(lblContrasena);
+		
+		pswContrasena = new JPasswordField();
+		pswContrasena.setBounds(383, 248, 227, 30);
+		panel.add(pswContrasena);
+		pswContrasena.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		pswContrasena.setForeground(new Color(192, 192, 192));
+		pswContrasena.setToolTipText("Contraseña");
+		
+		JLabel lblCorreoElectronico = new JLabel("Correo electrónico:");
+		lblCorreoElectronico.setBounds(125, 164, 209, 30);
+		panel.add(lblCorreoElectronico);
+		lblCorreoElectronico.setFont(new Font("Gill Sans MT", Font.BOLD, 22));
+		
+		txtCorreoElectrnico = new JTextField();
+		txtCorreoElectrnico.setBounds(383, 167, 227, 30);
+		panel.add(txtCorreoElectrnico);
+		txtCorreoElectrnico.setForeground(new Color(192, 192, 192));
+		txtCorreoElectrnico.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		txtCorreoElectrnico.setColumns(10);
+		
+		JLabel lblIniciarSesion = new JLabel("Iniciar Sesión");
+		lblIniciarSesion.setBounds(232, 50, 249, 71);
+		panel.add(lblIniciarSesion);
+		lblIniciarSesion.setFont(new Font("Gill Sans MT", Font.BOLD, 40));
 	}
 }
