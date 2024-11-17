@@ -17,8 +17,8 @@ public class vtnInicioSesion extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField txtCorreoElectrnico;
-	private JPasswordField passwordField;
-	private JButton btnNewButton;
+	private JPasswordField pswContrasena;
+	private JButton btnIngresarInicioSesion;
 
 	/**
 	 * Launch the application.
@@ -30,7 +30,7 @@ public class vtnInicioSesion extends JFrame {
 	 */
 	public vtnInicioSesion() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1280, 800);
+		setBounds(100, 100, 1281, 801);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -40,7 +40,7 @@ public class vtnInicioSesion extends JFrame {
 		JPanel jpnMenu = new JPanel();
 		jpnMenu.setBackground(new Color(255, 0, 0));
 		jpnMenu.setForeground(new Color(255, 0, 0));
-		jpnMenu.setBounds(0, 0, 1264, 82);
+		jpnMenu.setBounds(0, 0, 1264, 90);
 		contentPane.add(jpnMenu);
 		jpnMenu.setLayout(null);
 		
@@ -49,46 +49,64 @@ public class vtnInicioSesion extends JFrame {
 		lblTitulo.setFont(new Font("Impact", Font.PLAIN, 52));
 		jpnMenu.add(lblTitulo);
 		
+		JLabel lblNewLabel = new JLabel("Home");
+		lblNewLabel.setForeground(Color.WHITE);
+		lblNewLabel.setFont(new Font("Arial", Font.BOLD, 18));
+		lblNewLabel.setBounds(280, 35, 61, 22);
+		jpnMenu.add(lblNewLabel);
+		
+		JLabel lblCartelera = new JLabel("Cartelera");
+		lblCartelera.setForeground(Color.WHITE);
+		lblCartelera.setFont(new Font("Arial", Font.BOLD, 18));
+		lblCartelera.setBounds(460, 35, 85, 22);
+		jpnMenu.add(lblCartelera);
+		
+		JLabel lblTeatro = new JLabel("Teatro");
+		lblTeatro.setForeground(Color.WHITE);
+		lblTeatro.setFont(new Font("Arial", Font.BOLD, 18));
+		lblTeatro.setBounds(659, 35, 61, 22);
+		jpnMenu.add(lblTeatro);
+		
 		JPanel jpnIniciarSesion = new JPanel();
 		jpnIniciarSesion.setBackground(new Color(255, 255, 255));
-		jpnIniciarSesion.setBounds(0, 83, 1264, 678);
+		jpnIniciarSesion.setBounds(0, 90, 1264, 672);
 		contentPane.add(jpnIniciarSesion);
 		jpnIniciarSesion.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Iniciar Sesión");
-		lblNewLabel.setFont(new Font("Minion Pro", Font.BOLD, 35));
-		lblNewLabel.setBounds(542, 211, 227, 71);
-		jpnIniciarSesion.add(lblNewLabel);
+		JLabel lblIniciarSesion = new JLabel("Iniciar Sesión");
+		lblIniciarSesion.setFont(new Font("Gill Sans MT", Font.BOLD, 40));
+		lblIniciarSesion.setBounds(530, 149, 249, 71);
+		jpnIniciarSesion.add(lblIniciarSesion);
 		
 		txtCorreoElectrnico = new JTextField();
 		txtCorreoElectrnico.setForeground(new Color(192, 192, 192));
 		txtCorreoElectrnico.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		txtCorreoElectrnico.setBounds(542, 327, 227, 30);
+		txtCorreoElectrnico.setBounds(681, 266, 227, 30);
 		jpnIniciarSesion.add(txtCorreoElectrnico);
 		txtCorreoElectrnico.setColumns(10);
 		
-		passwordField = new JPasswordField();
-		passwordField.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		passwordField.setForeground(new Color(192, 192, 192));
-		passwordField.setToolTipText("Contraseña");
-		passwordField.setBounds(542, 385, 227, 30);
-		jpnIniciarSesion.add(passwordField);
+		pswContrasena = new JPasswordField();
+		pswContrasena.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		pswContrasena.setForeground(new Color(192, 192, 192));
+		pswContrasena.setToolTipText("Contraseña");
+		pswContrasena.setBounds(681, 347, 227, 30);
+		jpnIniciarSesion.add(pswContrasena);
 		
-		btnNewButton = new JButton("Ingresar");
-		btnNewButton.setForeground(Color.BLACK);
-		btnNewButton.setBackground(Color.RED);
-		btnNewButton.setFont(new Font("Minion Pro", Font.BOLD, 22));
-		btnNewButton.setBounds(584, 434, 152, 44);
-		jpnIniciarSesion.add(btnNewButton);
+		btnIngresarInicioSesion = new JButton("Ingresar");
+		btnIngresarInicioSesion.setForeground(Color.BLACK);
+		btnIngresarInicioSesion.setBackground(Color.RED);
+		btnIngresarInicioSesion.setFont(new Font("Gill Sans MT", Font.BOLD, 22));
+		btnIngresarInicioSesion.setBounds(579, 458, 152, 44);
+		jpnIniciarSesion.add(btnIngresarInicioSesion);
 		
-		JLabel lblNewLabel_1 = new JLabel("Correo electrónico:");
-		lblNewLabel_1.setFont(new Font("Minion Pro", Font.BOLD, 19));
-		lblNewLabel_1.setBounds(297, 324, 196, 30);
-		jpnIniciarSesion.add(lblNewLabel_1);
+		JLabel lblCorreoElectronico = new JLabel("Correo electrónico:");
+		lblCorreoElectronico.setFont(new Font("Gill Sans MT", Font.BOLD, 22));
+		lblCorreoElectronico.setBounds(423, 263, 209, 30);
+		jpnIniciarSesion.add(lblCorreoElectronico);
 		
-		JLabel lblNewLabel_1_1 = new JLabel("Contraseña:");
-		lblNewLabel_1_1.setFont(new Font("Minion Pro", Font.BOLD, 19));
-		lblNewLabel_1_1.setBounds(363, 385, 130, 30);
-		jpnIniciarSesion.add(lblNewLabel_1_1);
+		JLabel lblContrasena = new JLabel("Contraseña:");
+		lblContrasena.setFont(new Font("Gill Sans MT", Font.BOLD, 22));
+		lblContrasena.setBounds(505, 344, 127, 30);
+		jpnIniciarSesion.add(lblContrasena);
 	}
 }
