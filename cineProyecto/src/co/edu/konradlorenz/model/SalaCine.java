@@ -18,7 +18,16 @@ public class SalaCine {
 		this.columna = columna;
 		this.sala = sala;
 	}
-
+	
+	// Constructor simplificado
+    public SalaCine(String nombreSala, int fila, int columna) {
+        this.nombreSala = nombreSala;
+        this.fila = fila;
+        this.columna = columna;
+        this.sala = new Asiento[fila][columna]; // Inicializa la matriz de asientos
+        inicializarAsientos(); // Inicializa los asientos
+    }
+	
 	public SalaCine() {
 
 	}
