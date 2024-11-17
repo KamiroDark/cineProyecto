@@ -53,7 +53,9 @@ public class vntMenuPrincipal extends JFrame {
 		head.add(lblTitulo);
 		
 		//Boton IniciarSesion
-		JButton btnIniciarSesion = new JButton("Iniciar Sesión");
+		JButton btnIniciarSesion = new JButton("Sign up");
+		btnIniciarSesion.setForeground(new Color(255, 0, 0));
+		btnIniciarSesion.setFont(new Font("Arial", Font.BOLD, 17));
 		btnIniciarSesion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				vtnInicioSesion IniciarSesion = new vtnInicioSesion();
@@ -66,7 +68,8 @@ public class vntMenuPrincipal extends JFrame {
 		head.add(btnIniciarSesion);
 		
 		//Boton registrarse
-		JButton btnRegistrar = new JButton("Registrarse");
+		JButton btnRegistrar = new JButton("Log in");
+		btnRegistrar.setFont(new Font("Arial", Font.BOLD, 17));
 		btnRegistrar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				vtnRegistrar registrar = new vtnRegistrar();
@@ -79,7 +82,7 @@ public class vntMenuPrincipal extends JFrame {
 		head.add(btnRegistrar);
 		
 		JPanel bodyPeliculas = new JPanel();
-		bodyPeliculas.setBackground(new Color(192, 192, 192));
+		bodyPeliculas.setBackground(new Color(255, 255, 255));
 		bodyPeliculas.setBounds(0, 82, 1264, 679);
 		contentPane.add(bodyPeliculas);
 		bodyPeliculas.setLayout(null);
@@ -142,6 +145,8 @@ public class vntMenuPrincipal extends JFrame {
 		bodyPeliculas.add(lblTextoTrajeRojo);
 		
 		JButton btnHorariosVenom = new JButton("VER HORARIOS");
+		btnHorariosVenom.setForeground(new Color(64, 0, 64));
+		btnHorariosVenom.setFont(new Font("Gill Sans MT", Font.BOLD, 11));
 		btnHorariosVenom.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				HorariosVenom3 hVenom3 = new HorariosVenom3();
@@ -157,6 +162,7 @@ public class vntMenuPrincipal extends JFrame {
 		bodyPeliculas.add(btnHorariosVenom);
 		
 		JButton btnHorariosRobot = new JButton("VER HORARIOS");
+		btnHorariosRobot.setFont(new Font("Gill Sans MT", Font.BOLD, 11));
 		btnHorariosRobot.setBackground(new Color(255, 0, 0));
 		btnHorariosRobot.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -166,11 +172,13 @@ public class vntMenuPrincipal extends JFrame {
 		bodyPeliculas.add(btnHorariosRobot);
 		
 		JButton btnHorarioElTiempo = new JButton("VER HORARIOS");
+		btnHorarioElTiempo.setFont(new Font("Gill Sans MT", Font.BOLD, 11));
 		btnHorarioElTiempo.setBackground(new Color(255, 0, 0));
 		btnHorarioElTiempo.setBounds(575, 592, 123, 32);
 		bodyPeliculas.add(btnHorarioElTiempo);
 		
 		JButton btnHorariosLaSustancia = new JButton("VER HORARIOS");
+		btnHorariosLaSustancia.setFont(new Font("Gill Sans MT", Font.BOLD, 11));
 		btnHorariosLaSustancia.setBackground(new Color(255, 0, 0));
 		btnHorariosLaSustancia.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -180,6 +188,7 @@ public class vntMenuPrincipal extends JFrame {
 		bodyPeliculas.add(btnHorariosLaSustancia);
 		
 		JButton btnHorariosTrajeRojo = new JButton("VER HORARIOS");
+		btnHorariosTrajeRojo.setFont(new Font("Gill Sans MT", Font.BOLD, 11));
 		btnHorariosTrajeRojo.setBackground(new Color(255, 0, 0));
 		btnHorariosTrajeRojo.setBounds(1056, 592, 123, 32);
 		bodyPeliculas.add(btnHorariosTrajeRojo);

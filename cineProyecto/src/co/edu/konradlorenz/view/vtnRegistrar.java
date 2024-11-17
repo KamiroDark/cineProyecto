@@ -50,7 +50,7 @@ public class vtnRegistrar extends JFrame {
 		jpnMenu.setLayout(null);
 		
 		JLabel lblTitulo = new JLabel("DarKaZo");
-		lblTitulo.setBounds(10, 11, 176, 64);
+		lblTitulo.setBounds(31, 11, 176, 64);
 		lblTitulo.setFont(new Font("Impact", Font.PLAIN, 52));
 		jpnMenu.add(lblTitulo);
 		
