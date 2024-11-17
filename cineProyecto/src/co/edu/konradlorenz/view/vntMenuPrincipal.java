@@ -48,73 +48,119 @@ public class vntMenuPrincipal extends JFrame {
 		lblTitulo.setBounds(40, 11, 183, 60);
 		panel.add(lblTitulo);
 		
+		JButton btnIniciarSesion = new JButton("Iniciar Sesión");
+		btnIniciarSesion.setBackground(new Color(255, 255, 255));
+		btnIniciarSesion.setBounds(931, 25, 123, 32);
+		panel.add(btnIniciarSesion);
+		
+		JButton btnRegistrar = new JButton("Registrarse");
+		btnRegistrar.setBackground(new Color(255, 255, 255));
+		btnRegistrar.setBounds(1088, 25, 123, 32);
+		panel.add(btnRegistrar);
+		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(new Color(192, 192, 192));
 		panel_1.setBounds(0, 82, 1264, 679);
 		contentPane.add(panel_1);
 		panel_1.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setBounds(45, 161, 200, 300);
-		panel_1.add(lblNewLabel);
-		lblNewLabel.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/images/posterVenom3.jpg")));
+		JLabel lblVenomPoster = new JLabel("");
+		lblVenomPoster.setBounds(45, 161, 200, 300);
+		panel_1.add(lblVenomPoster);
+		lblVenomPoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/images/posterVenom3.jpg")));
 		
-		JLabel lblNewLabel_1 = new JLabel("En Cartelera\r\n");
-		lblNewLabel_1.setForeground(new Color(185, 18, 0));
-		lblNewLabel_1.setFont(new Font("Impact", Font.PLAIN, 40));
-		lblNewLabel_1.setBackground(new Color(185, 18, 0));
-		lblNewLabel_1.setBounds(45, 82, 282, 68);
-		panel_1.add(lblNewLabel_1);
+		JLabel lblEnCartelera = new JLabel("En Cartelera\r\n");
+		lblEnCartelera.setForeground(new Color(185, 18, 0));
+		lblEnCartelera.setFont(new Font("Impact", Font.PLAIN, 40));
+		lblEnCartelera.setBackground(new Color(185, 18, 0));
+		lblEnCartelera.setBounds(45, 82, 282, 68);
+		panel_1.add(lblEnCartelera);
 		
-		JLabel lblNewLabel_2 = new JLabel("\r\n");
-		lblNewLabel_2.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/images/posterRobotSalvaje.jpg")));
-		lblNewLabel_2.setBounds(280, 161, 220, 300);
-		panel_1.add(lblNewLabel_2);
+		JLabel lblRobotPoster = new JLabel("\r\n");
+		lblRobotPoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/images/posterRobotSalvaje.jpg")));
+		lblRobotPoster.setBounds(280, 161, 220, 300);
+		panel_1.add(lblRobotPoster);
 		
-		JLabel label = new JLabel("\r\n");
-		label.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/images/elTiempoQueTenemosPoster.jpg")));
-		label.setBounds(531, 161, 220, 300);
-		panel_1.add(label);
+		JLabel lblElTIempoQuePoster = new JLabel("\r\n");
+		lblElTIempoQuePoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/images/elTiempoQueTenemosPoster.jpg")));
+		lblElTIempoQuePoster.setBounds(531, 161, 220, 300);
+		panel_1.add(lblElTIempoQuePoster);
 		
-		JLabel lblNewLabel_3 = new JLabel("");
-		lblNewLabel_3.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/images/posterLaSustancia.png")));
-		lblNewLabel_3.setBounds(783, 161, 200, 300);
-		panel_1.add(lblNewLabel_3);
+		JLabel lblLaSustanciaPoster = new JLabel("");
+		lblLaSustanciaPoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/images/posterLaSustancia.png")));
+		lblLaSustanciaPoster.setBounds(783, 161, 200, 300);
+		panel_1.add(lblLaSustanciaPoster);
 		
-		JLabel lblNewLabel_4 = new JLabel("New label");
-		lblNewLabel_4.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/images/posterCodigoTrajeRojo.png")));
-		lblNewLabel_4.setBounds(1016, 161, 200, 300);
-		panel_1.add(lblNewLabel_4);
+		JLabel lblCodigoTrajePoster = new JLabel("New label");
+		lblCodigoTrajePoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/images/posterCodigoTrajeRojo.png")));
+		lblCodigoTrajePoster.setBounds(1016, 161, 200, 300);
+		panel_1.add(lblCodigoTrajePoster);
 		
-		JLabel lblNewLabel_5 = new JLabel("Venom 3 El ultimo Baile");
-		lblNewLabel_5.setFont(new Font("Impact", Font.PLAIN, 20));
-		lblNewLabel_5.setBounds(55, 462, 187, 32);
-		panel_1.add(lblNewLabel_5);
+		JLabel lblTextoVenom = new JLabel("Venom 3 El ultimo Baile");
+		lblTextoVenom.setFont(new Font("Impact", Font.PLAIN, 20));
+		lblTextoVenom.setBounds(55, 462, 187, 32);
+		panel_1.add(lblTextoVenom);
 		
-		JLabel lblNewLabel_6 = new JLabel("Robot Salvaje");
-		lblNewLabel_6.setFont(new Font("Impact", Font.PLAIN, 20));
-		lblNewLabel_6.setBounds(333, 467, 117, 22);
-		panel_1.add(lblNewLabel_6);
+		JLabel lblTextoRobot = new JLabel("Robot Salvaje");
+		lblTextoRobot.setFont(new Font("Impact", Font.PLAIN, 20));
+		lblTextoRobot.setBounds(333, 467, 117, 22);
+		panel_1.add(lblTextoRobot);
 		
-		JLabel lblNewLabel_7 = new JLabel("El Tiempo Que Tenemos");
-		lblNewLabel_7.setFont(new Font("Impact", Font.PLAIN, 20));
-		lblNewLabel_7.setBounds(541, 467, 194, 22);
-		panel_1.add(lblNewLabel_7);
+		JLabel lblTextoElTiempo = new JLabel("El Tiempo Que Tenemos");
+		lblTextoElTiempo.setFont(new Font("Impact", Font.PLAIN, 20));
+		lblTextoElTiempo.setBounds(541, 467, 194, 22);
+		panel_1.add(lblTextoElTiempo);
 		
-		JLabel lblNewLabel_8 = new JLabel("La Sustancia");
-		lblNewLabel_8.setFont(new Font("Impact", Font.PLAIN, 20));
-		lblNewLabel_8.setBounds(833, 467, 117, 22);
-		panel_1.add(lblNewLabel_8);
+		JLabel lblTextoLaSustancia = new JLabel("La Sustancia");
+		lblTextoLaSustancia.setFont(new Font("Impact", Font.PLAIN, 20));
+		lblTextoLaSustancia.setBounds(833, 467, 117, 22);
+		panel_1.add(lblTextoLaSustancia);
 		
-		JLabel lblNewLabel_9 = new JLabel("Código Traje Rojo");
-		lblNewLabel_9.setFont(new Font("Impact", Font.PLAIN, 20));
-		lblNewLabel_9.setBounds(1045, 467, 150, 22);
-		panel_1.add(lblNewLabel_9);
+		JLabel lblTextoTrajeRojo = new JLabel("Código Traje Rojo");
+		lblTextoTrajeRojo.setFont(new Font("Impact", Font.PLAIN, 20));
+		lblTextoTrajeRojo.setBounds(1045, 467, 150, 22);
+		panel_1.add(lblTextoTrajeRojo);
 		
-		JButton btnNewButton = new JButton("VER HORARIOS");
-		btnNewButton.setForeground(new Color(0, 0, 0));
-		btnNewButton.setBackground(Color.RED);
-		btnNewButton.setBounds(79, 505, 123, 32);
-		panel_1.add(btnNewButton);
+		JButton btnHorariosVenom = new JButton("VER HORARIOS");
+		btnHorariosVenom.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnHorariosVenom.setBackground(new Color(255, 0, 0));
+		btnHorariosVenom.setBounds(83, 505, 123, 32);
+		panel_1.add(btnHorariosVenom);
+		
+		JButton btnHorariosRobot = new JButton("VER HORARIOS");
+		btnHorariosRobot.setBackground(new Color(255, 0, 0));
+		btnHorariosRobot.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnHorariosRobot.setBounds(327, 505, 123, 32);
+		panel_1.add(btnHorariosRobot);
+		
+		JButton btnHorarioElTiempo = new JButton("VER HORARIOS");
+		btnHorarioElTiempo.setBackground(new Color(255, 0, 0));
+		btnHorarioElTiempo.setBounds(575, 505, 123, 32);
+		panel_1.add(btnHorarioElTiempo);
+		
+		JButton btnHorariosLaSustancia = new JButton("VER HORARIOS");
+		btnHorariosLaSustancia.setBackground(new Color(255, 0, 0));
+		btnHorariosLaSustancia.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnHorariosLaSustancia.setBounds(821, 505, 123, 32);
+		panel_1.add(btnHorariosLaSustancia);
+		
+		JButton btnHorariosTrajeRojo = new JButton("VER HORARIOS");
+		btnHorariosTrajeRojo.setBackground(new Color(255, 0, 0));
+		btnHorariosTrajeRojo.setBounds(1055, 505, 123, 32);
+		panel_1.add(btnHorariosTrajeRojo);
+		
+		JLabel lblTextoBienvenida = new JLabel("Bienvenid@ a DarKaZoFilms!");
+		lblTextoBienvenida.setFont(new Font("Franklin Gothic Medium", Font.PLAIN, 30));
+		lblTextoBienvenida.setBounds(442, 52, 376, 32);
+		panel_1.add(lblTextoBienvenida);
 	}
 }
