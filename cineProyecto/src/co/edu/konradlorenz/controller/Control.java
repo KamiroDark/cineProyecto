@@ -32,11 +32,18 @@ public class Control {
 	public Usuario usuarioSeleccionado;
 
 	public void run() {
+		
+		datosDePrueba();
+		
+		//Frames
 		vntMenuPrincipal ventanaPrincipal = new vntMenuPrincipal();
+		vtnRegistrar registrar = new vtnRegistrar();
+		vtnRegistro registro = new vtnRegistro();
+		vtnInicioSesion inicioSesion = new vtnInicioSesion();
 		
 		ventanaPrincipal.setVisible(true);
 		
-		datosDePrueba();
+		
 	}
 	
 	//Metodo para validar el inicio de sesion
