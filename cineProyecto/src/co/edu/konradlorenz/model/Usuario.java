@@ -5,16 +5,16 @@ public abstract class Usuario {
 	// Atributos
 	protected String nombreUsuario;
 	protected String correoElectronico;
-	protected String contraseña;
+	protected String contrasena;
 	protected long celular;
 	protected TipoMembresia membresia;
 
 	// Constructores
-	public Usuario(String nombreUsuario, String correoElectronico, String contraseña, long celular,
+	public Usuario(String nombreUsuario, String correoElectronico, String contrasena, long celular,
 			TipoMembresia membresia) {
 		this.nombreUsuario = nombreUsuario;
 		this.correoElectronico = correoElectronico;
-		this.contraseña = contraseña;
+		this.contrasena = contrasena;
 		this.celular = celular;
 		this.membresia = membresia;
 	}
@@ -39,12 +39,12 @@ public abstract class Usuario {
 		this.correoElectronico = correoElectronico;
 	}
 
-	public String getContraseña() {
-		return contraseña;
+	public String getContrasena() {
+		return contrasena;
 	}
 
-	public void setContraseña(String contraseña) {
-		this.contraseña = contraseña;
+	public void setContrasena(String contrasena) {
+		this.contrasena = contrasena;
 	}
 
 	public long getCelular() {

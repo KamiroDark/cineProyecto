@@ -13,6 +13,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.border.LineBorder;
 
 public class vtnAsientos extends JFrame {
 
@@ -42,6 +43,7 @@ public class vtnAsientos extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1200, 896);
 		contentPane = new JPanel();
+		contentPane.setBackground(new Color(255, 255, 255));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
@@ -89,6 +91,7 @@ public class vtnAsientos extends JFrame {
 		jpnPantalla.add(lblPantalla);
 		
 		JPanel jpnAsientos = new JPanel();
+		jpnAsientos.setBorder(new LineBorder(new Color(0, 0, 0)));
 		jpnAsientos.setBounds(87, 155, 1006, 534);
 		contentPane.add(jpnAsientos);
 		jpnAsientos.setLayout(null);
@@ -449,61 +452,73 @@ public class vtnAsientos extends JFrame {
 		jpnAsientos.add(lblFilaF);
 		
 		JButton btnPremiumF1 = new JButton("F1");
+		btnPremiumF1.setBackground(Color.ORANGE);
 		btnPremiumF1.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumF1.setBounds(74, 398, 57, 57);
 		jpnAsientos.add(btnPremiumF1);
 		
 		JButton btnPremiumF2 = new JButton("F2");
+		btnPremiumF2.setBackground(Color.ORANGE);
 		btnPremiumF2.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumF2.setBounds(141, 398, 57, 57);
 		jpnAsientos.add(btnPremiumF2);
 		
 		JButton btnPremiumF3 = new JButton("F3");
+		btnPremiumF3.setBackground(Color.ORANGE);
 		btnPremiumF3.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumF3.setBounds(208, 398, 57, 57);
 		jpnAsientos.add(btnPremiumF3);
 		
 		JButton btnPremiumF4 = new JButton("F4");
+		btnPremiumF4.setBackground(Color.ORANGE);
 		btnPremiumF4.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumF4.setBounds(277, 398, 57, 57);
 		jpnAsientos.add(btnPremiumF4);
 		
 		JButton btnPremiumF5 = new JButton("F5");
+		btnPremiumF5.setBackground(Color.ORANGE);
 		btnPremiumF5.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumF5.setBounds(344, 398, 57, 57);
 		jpnAsientos.add(btnPremiumF5);
 		
 		JButton btnPremiumF6 = new JButton("F6");
+		btnPremiumF6.setBackground(Color.ORANGE);
 		btnPremiumF6.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumF6.setBounds(411, 398, 57, 57);
 		jpnAsientos.add(btnPremiumF6);
 		
 		JButton btnPremiumF7 = new JButton("F7");
+		btnPremiumF7.setBackground(Color.ORANGE);
 		btnPremiumF7.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumF7.setBounds(534, 398, 57, 57);
 		jpnAsientos.add(btnPremiumF7);
 		
 		JButton btnPremiumF8 = new JButton("F8");
+		btnPremiumF8.setBackground(Color.ORANGE);
 		btnPremiumF8.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumF8.setBounds(601, 398, 57, 57);
 		jpnAsientos.add(btnPremiumF8);
 		
 		JButton btnPremiumF9 = new JButton("F9");
+		btnPremiumF9.setBackground(Color.ORANGE);
 		btnPremiumF9.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumF9.setBounds(668, 398, 57, 57);
 		jpnAsientos.add(btnPremiumF9);
 		
 		JButton btnPremiumF10 = new JButton("F10");
+		btnPremiumF10.setBackground(Color.ORANGE);
 		btnPremiumF10.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumF10.setBounds(735, 398, 57, 57);
 		jpnAsientos.add(btnPremiumF10);
 		
 		JButton btnPremiumF11 = new JButton("F11");
+		btnPremiumF11.setBackground(Color.ORANGE);
 		btnPremiumF11.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumF11.setBounds(802, 398, 57, 57);
 		jpnAsientos.add(btnPremiumF11);
 		
 		JButton btnPremiumF12 = new JButton("F12");
+		btnPremiumF12.setBackground(Color.ORANGE);
 		btnPremiumF12.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumF12.setBounds(869, 398, 57, 57);
 		jpnAsientos.add(btnPremiumF12);
@@ -515,83 +530,117 @@ public class vtnAsientos extends JFrame {
 		
 		JLabel lblFilaG = new JLabel("G");
 		lblFilaG.setFont(new Font("Tahoma", Font.BOLD, 20));
-		lblFilaG.setBounds(31, 488, 19, 14);
+		lblFilaG.setBounds(31, 474, 19, 35);
 		jpnAsientos.add(lblFilaG);
 		
 		JButton btnPremiumG1 = new JButton("G1");
+		btnPremiumG1.setBackground(Color.ORANGE);
 		btnPremiumG1.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumG1.setBounds(74, 466, 57, 57);
 		jpnAsientos.add(btnPremiumG1);
 		
 		JButton btnPremiumG2 = new JButton("G2");
+		btnPremiumG2.setBackground(Color.ORANGE);
 		btnPremiumG2.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumG2.setBounds(141, 466, 57, 57);
 		jpnAsientos.add(btnPremiumG2);
 		
 		JButton btnPremiumG3 = new JButton("G3");
+		btnPremiumG3.setBackground(Color.ORANGE);
 		btnPremiumG3.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumG3.setBounds(208, 466, 57, 57);
 		jpnAsientos.add(btnPremiumG3);
 		
 		JButton btnPremiumG4 = new JButton("G4");
+		btnPremiumG4.setBackground(Color.ORANGE);
 		btnPremiumG4.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumG4.setBounds(277, 466, 57, 57);
 		jpnAsientos.add(btnPremiumG4);
 		
 		JButton btnPremiumG5 = new JButton("G5");
+		btnPremiumG5.setBackground(Color.ORANGE);
 		btnPremiumG5.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumG5.setBounds(344, 466, 57, 57);
 		jpnAsientos.add(btnPremiumG5);
 		
 		JButton btnPremiumG6 = new JButton("G6");
+		btnPremiumG6.setBackground(Color.ORANGE);
 		btnPremiumG6.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumG6.setBounds(411, 466, 57, 57);
 		jpnAsientos.add(btnPremiumG6);
 		
 		JButton btnPremiumG7 = new JButton("G7");
+		btnPremiumG7.setBackground(Color.ORANGE);
 		btnPremiumG7.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumG7.setBounds(534, 466, 57, 57);
 		jpnAsientos.add(btnPremiumG7);
 		
 		JButton btnPremiumG8 = new JButton("G8");
+		btnPremiumG8.setBackground(Color.ORANGE);
 		btnPremiumG8.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumG8.setBounds(601, 466, 57, 57);
 		jpnAsientos.add(btnPremiumG8);
 		
 		JButton btnPremiumG9 = new JButton("G9");
+		btnPremiumG9.setBackground(Color.ORANGE);
 		btnPremiumG9.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumG9.setBounds(668, 466, 57, 57);
 		jpnAsientos.add(btnPremiumG9);
 		
 		JButton btnPremiumG10 = new JButton("G10");
+		btnPremiumG10.setBackground(Color.ORANGE);
 		btnPremiumG10.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumG10.setBounds(735, 466, 57, 57);
 		jpnAsientos.add(btnPremiumG10);
 		
 		JButton btnPremiumG11 = new JButton("G11");
+		btnPremiumG11.setBackground(Color.ORANGE);
 		btnPremiumG11.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumG11.setBounds(802, 466, 57, 57);
 		jpnAsientos.add(btnPremiumG11);
 		
 		JButton btnPremiumG12 = new JButton("G12");
+		btnPremiumG12.setBackground(Color.ORANGE);
 		btnPremiumG12.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnPremiumG12.setBounds(869, 466, 57, 57);
 		jpnAsientos.add(btnPremiumG12);
 		
 		JLabel lblFilaG_1 = new JLabel("G");
 		lblFilaG_1.setFont(new Font("Tahoma", Font.BOLD, 20));
-		lblFilaG_1.setBounds(957, 488, 19, 14);
+		lblFilaG_1.setBounds(957, 481, 19, 21);
 		jpnAsientos.add(lblFilaG_1);
 		
-		JButton btnNewButton = new JButton("Continuar\r\n");
-		btnNewButton.setBackground(new Color(255, 0, 0));
-		btnNewButton.setForeground(new Color(0, 0, 0));
-		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 18));
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton btnContinuar = new JButton("Continuar\r\n");
+		btnContinuar.setBackground(new Color(255, 0, 0));
+		btnContinuar.setForeground(new Color(0, 0, 0));
+		btnContinuar.setFont(new Font("Gill Sans MT", Font.BOLD, 22));
+		btnContinuar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				vtnVentaMop VentaMop = new vtnVentaMop();
+				VentaMop.setVisible(true);
+				vtnAsientos.this.setVisible(false);
 			}
 		});
-		btnNewButton.setBounds(930, 700, 163, 31);
-		contentPane.add(btnNewButton);
+		btnContinuar.setBounds(930, 700, 163, 31);
+		contentPane.add(btnContinuar);
+		
+		JLabel lblPremier = new JLabel("*La fila F y G son asientos premier");
+		lblPremier.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblPremier.setBounds(87, 700, 344, 30);
+		contentPane.add(lblPremier);
+		
+		JButton btnRegresar = new JButton("Regresar");
+		btnRegresar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				vntMenuPrincipal Menu = new vntMenuPrincipal();
+				Menu.setVisible(true);
+				vtnAsientos.this.setVisible(false);
+			}
+		});
+		btnRegresar.setForeground(Color.BLACK);
+		btnRegresar.setFont(new Font("Gill Sans MT", Font.BOLD, 22));
+		btnRegresar.setBackground(Color.RED);
+		btnRegresar.setBounds(10, 815, 163, 31);
+		contentPane.add(btnRegresar);
 	}
 }

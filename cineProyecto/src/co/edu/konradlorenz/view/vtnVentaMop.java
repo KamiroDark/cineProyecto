@@ -12,6 +12,8 @@ import javax.swing.border.LineBorder;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class vtnVentaMop extends JFrame {
 
@@ -41,6 +43,7 @@ public class vtnVentaMop extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1273, 772);
 		contentPane = new JPanel();
+		contentPane.setBackground(new Color(255, 255, 255));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
@@ -84,6 +87,13 @@ public class vtnVentaMop extends JFrame {
 		contentPane.add(jpnFactura);
 		
 		JButton btnIngresarInicioSesion = new JButton("Continuar\r\n");
+		btnIngresarInicioSesion.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				vtnFactura Factura = new vtnFactura();
+				Factura.setVisible(true);
+				vtnVentaMop.this.setVisible(false);
+			}
+		});
 		btnIngresarInicioSesion.setForeground(Color.BLACK);
 		btnIngresarInicioSesion.setFont(new Font("Gill Sans MT", Font.BOLD, 22));
 		btnIngresarInicioSesion.setBackground(Color.RED);
@@ -135,5 +145,19 @@ public class vtnVentaMop extends JFrame {
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Tarjeta de Credito", "Tarjeta de Debito", "PSE"}));
 		comboBox.setBounds(393, 390, 143, 22);
 		jpnFactura.add(comboBox);
+		
+		JButton btnNoDeseoContinuar = new JButton("No deseo Continuar");
+		btnNoDeseoContinuar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				vtnAsientos Asientos = new vtnAsientos();
+				Asientos.setVisible(true);
+				vtnVentaMop.this.setVisible(false);
+			}
+		});
+		btnNoDeseoContinuar.setForeground(Color.BLACK);
+		btnNoDeseoContinuar.setFont(new Font("Gill Sans MT", Font.BOLD, 10));
+		btnNoDeseoContinuar.setBackground(Color.RED);
+		btnNoDeseoContinuar.setBounds(291, 525, 161, 22);
+		jpnFactura.add(btnNoDeseoContinuar);
 	}
 }

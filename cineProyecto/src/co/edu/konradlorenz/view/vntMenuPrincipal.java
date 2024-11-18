@@ -53,33 +53,33 @@ public class vntMenuPrincipal extends JFrame {
 		head.add(lblTitulo);
 		
 		//Boton IniciarSesion
-		JButton btnIniciarSesion = new JButton("Sign up");
-		btnIniciarSesion.setForeground(new Color(255, 0, 0));
-		btnIniciarSesion.setFont(new Font("Arial", Font.BOLD, 17));
-		btnIniciarSesion.addActionListener(new ActionListener() {
+		JButton btnRegistro = new JButton("Sign up");
+		btnRegistro.setForeground(new Color(255, 0, 0));
+		btnRegistro.setFont(new Font("Arial", Font.BOLD, 17));
+		btnRegistro.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				vtnInicioSesion IniciarSesion = new vtnInicioSesion();
 				IniciarSesion.setVisible(true);
 				vntMenuPrincipal.this.setVisible(false);
 			}
 		});
-		btnIniciarSesion.setBackground(new Color(255, 255, 255));
-		btnIniciarSesion.setBounds(1106, 25, 123, 32);
-		head.add(btnIniciarSesion);
+		btnRegistro.setBackground(new Color(255, 255, 255));
+		btnRegistro.setBounds(1106, 25, 123, 32);
+		head.add(btnRegistro);
 		
 		//Boton registrarse
-		JButton btnRegistrar = new JButton("Log in");
-		btnRegistrar.setFont(new Font("Arial", Font.BOLD, 17));
-		btnRegistrar.addActionListener(new ActionListener() {
+		JButton btnInicioSesion = new JButton("Log in");
+		btnInicioSesion.setFont(new Font("Arial", Font.BOLD, 17));
+		btnInicioSesion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				vtnRegistrar registrar = new vtnRegistrar();
-				registrar.setVisible(true);
+				vtnInicioSesion Inicio = new vtnInicioSesion();
+				Inicio.setVisible(true);
 				vntMenuPrincipal.this.setVisible(false);
 			}
 		});
-		btnRegistrar.setBackground(new Color(255, 255, 255));
-		btnRegistrar.setBounds(954, 25, 123, 32);
-		head.add(btnRegistrar);
+		btnInicioSesion.setBackground(new Color(255, 255, 255));
+		btnInicioSesion.setBounds(954, 25, 123, 32);
+		head.add(btnInicioSesion);
 		
 		JPanel bodyPeliculas = new JPanel();
 		bodyPeliculas.setBackground(new Color(255, 255, 255));
@@ -114,7 +114,7 @@ public class vntMenuPrincipal extends JFrame {
 		lblLaSustanciaPoster.setBounds(785, 238, 200, 300);
 		bodyPeliculas.add(lblLaSustanciaPoster);
 		
-		JLabel lblCodigoTrajePoster = new JLabel("New label");
+		JLabel lblCodigoTrajePoster = new JLabel("");
 		lblCodigoTrajePoster.setIcon(new ImageIcon(vntMenuPrincipal.class.getResource("/co/edu/konradlorenz/view/images/posterCodigoTrajeRojo.png")));
 		lblCodigoTrajePoster.setBounds(1015, 238, 200, 300);
 		bodyPeliculas.add(lblCodigoTrajePoster);

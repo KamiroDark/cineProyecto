@@ -177,6 +177,9 @@ public class HorariosVenom3 extends JPanel {
 		btnConfirmar.setBounds(506, 566, 200, 30);
 		btnConfirmar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				vtnAsientos Asientos = new vtnAsientos();
+				Asientos.setVisible(true);
+				HorariosVenom3.this.setVisible(false);
 				if (funcionSeleccionada != null) {
 					// Aquí se muestra la función seleccionada
 					JOptionPane.showMessageDialog(null,
@@ -189,7 +192,14 @@ public class HorariosVenom3 extends JPanel {
 		add(btnConfirmar);
 		
 		JButton btnAtras = new JButton("Regresar");
-		btnAtras.setForeground(new Color(64, 0, 64));
+		btnAtras.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				vntMenuPrincipal Menu = new vntMenuPrincipal();
+				Menu.setVisible(true);
+				HorariosVenom3.this.setVisible(false);
+			}
+		});
+		btnAtras.setForeground(new Color(0, 0, 0));
 		btnAtras.setBackground(new Color(255, 0, 0));
 		btnAtras.setFont(new Font("Arial", Font.BOLD, 17));
 		btnAtras.setBounds(10, 639, 150, 30);

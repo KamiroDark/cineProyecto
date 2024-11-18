@@ -170,6 +170,9 @@ public class HorarioCodigoTrajeRojo extends JPanel {
 		btnConfirmar.setBounds(506, 566, 200, 30);
 		btnConfirmar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				vtnAsientos Asientos = new vtnAsientos();
+				Asientos.setVisible(true);
+				HorarioCodigoTrajeRojo.this.setVisible(false);
 				if (funcionSeleccionada != null) {
 					
 					JOptionPane.showMessageDialog(null,
@@ -182,7 +185,14 @@ public class HorarioCodigoTrajeRojo extends JPanel {
 		add(btnConfirmar);
 		
 		JButton btnAtras = new JButton("Regresar");
-		btnAtras.setForeground(new Color(64, 0, 64));
+		btnAtras.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				vntMenuPrincipal Menu = new vntMenuPrincipal();
+				Menu.setVisible(true);
+				HorarioCodigoTrajeRojo.this.setVisible(false);
+			}
+		});
+		btnAtras.setForeground(new Color(0, 0, 0));
 		btnAtras.setFont(new Font("Arial", Font.BOLD, 17));
 		btnAtras.setBackground(Color.RED);
 		btnAtras.setBounds(10, 640, 150, 30);

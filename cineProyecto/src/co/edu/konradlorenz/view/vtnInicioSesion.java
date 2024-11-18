@@ -12,6 +12,8 @@ import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.border.LineBorder;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class vtnInicioSesion extends JFrame {
 
@@ -82,6 +84,10 @@ public class vtnInicioSesion extends JFrame {
 		panel.setLayout(null);
 		
 		btnIngresarInicioSesion = new JButton("Ingresar");
+		btnIngresarInicioSesion.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnIngresarInicioSesion.setBounds(281, 359, 152, 44);
 		panel.add(btnIngresarInicioSesion);
 		btnIngresarInicioSesion.setForeground(Color.BLACK);

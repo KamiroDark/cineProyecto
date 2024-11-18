@@ -43,6 +43,7 @@ public class vtnFactura extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1273, 810);
 		contentPane = new JPanel();
+		contentPane.setBackground(new Color(255, 255, 255));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
@@ -88,6 +89,9 @@ public class vtnFactura extends JFrame {
 		JButton btnIngresarInicioSesion = new JButton("Volver al Inicio");
 		btnIngresarInicioSesion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				vntMenuPrincipal Menu = new vntMenuPrincipal();
+				Menu.setVisible(true);
+				vtnFactura.this.setVisible(false);
 			}
 		});
 		btnIngresarInicioSesion.setForeground(Color.BLACK);
